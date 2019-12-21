@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.h.springboot_mybatis.mapper.CarMapper">
+    <select id="queryAll" resultType="com.h.springboot_mybatis.pojo.Car">
+        select * from car
+    </select>
+
+    <select id="queryByUserName" resultType="com.h.springboot_mybatis.pojo.Car">
+        select * from car where CarName = #{username}
+    </select>
+
+</mapper>
